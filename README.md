@@ -5,3 +5,7 @@ Welcome to the Inception project's README! This project focuses on system admini
 # what is DOCKER:
 
 https://hackr.io/blog/what-is-docker#docker-compose
+
+# What is Dockerfile?
+
+https://jyotijha5916.ongraphy.com/blog/understanding-dockerfile
