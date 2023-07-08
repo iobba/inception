@@ -9,6 +9,7 @@ https://hackr.io/blog/what-is-docker#docker-compose
 # What is Dockerfile:
 
 https://jyotijha5916.ongraphy.com/blog/understanding-dockerfile
+https://jyotijha5916.ongraphy.com/blog/understanding-dockerfile
 
 
 # what is the difference between containerization and Virtualization
