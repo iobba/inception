@@ -19,5 +19,5 @@ Containerization is a form of virtualization. **Virtualization aims to run mult
 
 #. **CMD TO REMOVE ALL (images , containers , volumes and networks)**:
 | images | container | volume | networks |
-| --- | --- | --- |  |
+|  |  |  |  |
 | docker rmi -f (ID or name) | docker rm -f (ID or NAME) | docker volume rm -f (ID OR NAME) | docker network rm -f (ID OR NAME) |
