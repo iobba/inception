@@ -12,7 +12,7 @@ https://jyotijha5916.ongraphy.com/blog/understanding-dockerfile
 
 # what is the difference between containerization and Virtualization
 
-Containerization is a form of virtualization. ***Virtualization aims to run multiple OS instances on a single server, whereas containerization runs a single OS instance, with multiple user spaces to isolate processes from one another***.
+Containerization is a form of virtualization. **Virtualization aims to run multiple OS instances on a single server, whereas containerization runs a single OS instance, with multiple user spaces to isolate processes from one another.
 
 ![image](https://github.com/iobba/inception/assets/125093290/ac97b609-e581-4e01-b062-db7c6c38dc51)
 
