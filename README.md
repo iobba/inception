@@ -21,4 +21,3 @@ Containerization is a form of virtualization. **Virtualization aims to run mult
 | images | container | volume | networks |
 | --- | --- | --- | --- |
 | docker rmi -f (ID or name) | docker rm -f (ID or NAME) | docker volume rm -f (ID OR NAME) | docker network rm -f (ID OR NAME) |
-| docker rmi -f $(docker images -q); | docker rm -f $(docker ps -aq); | docker volume rm -f $(docker volume ls -q); | docker network rm $(docker network ls -q); |
