@@ -1,4 +1,3 @@
-![image](https://github.com/iobba/inception/assets/125093290/6e89c6a8-1318-4fd2-a3a4-5124dfccc7ce)
 # Inception_42
 
 Welcome to the **Inception** project's README! This project focuses on system administration tasks using Docker and containerization. I will provide some useful links and resources for reference throughout the project.
@@ -9,7 +8,9 @@ https://hackr.io/blog/what-is-docker#docker-compose
 
 # What is Dockerfile:
 
-https://jyotijha5916.ongraphy.com/blog/understanding-dockerfile 
+https://jyotijha5916.ongraphy.com/blog/understanding-dockerfile
+![image](https://github.com/iobba/inception/assets/125093290/7910e9f1-ee64-4a1f-beab-69cea8c2b221)
+
 
 # what is the difference between containerization and Virtualization
 
