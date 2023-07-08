@@ -1,4 +1,3 @@
-
 ![image](https://github.com/iobba/inception/assets/125093290/6e89c6a8-1318-4fd2-a3a4-5124dfccc7ce)
 # Inception_42
 
