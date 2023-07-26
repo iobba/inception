@@ -23,3 +23,7 @@ Containerization is a form of virtualization. **Virtualization aims to run mult
 | docker rmi -f (ID or name) | docker rm -f (ID or NAME) | docker volume rm -f (ID OR NAME) | docker network rm -f (ID OR NAME) |
 
 
+# cool resources:
+
+https://purple-page-995.notion.site/A-simple-Documentation-for-inception-dd60c488201741b09f1ed64157245bdf
+
