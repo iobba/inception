@@ -1,21 +1,21 @@
-root /var/www/wordpress;
 
 server {
     listen 443 ssl;
-    listen [::]:443 ssl;
 
     server_name bcaffere.42.fr;
 
-    ssl_protocols TLSv1.2 TLSv1.3;
+    root /var/www/html/wordpress;
+
+    index index.php;
 
     ssl_certificate /etc/ssl/certs/nginx.crt;
     ssl_certificate_key /etc/ssl/private/nginx.key;
 
-    index index.php;
+    autoindex on;
+
+    ssl_protocols TLSv1.2 TLSv1.3;
 
     location / {
-        autoindex on;
-        autoindex_format html;
         try_files $uri $uri/ =404;
     }
 
