@@ -1,6 +1,6 @@
-CREATE DATABASE Base;
-CREATE USER 'bca'@'%' IDENTIFIED BY '1qaz';
-GRANT ALL PRIVILEGES ON Base.* TO 'bca'@'%';
+CREATE DATABASE my_newdb;
+CREATE USER 'iobba'@'%' IDENTIFIED BY '123456789';
+GRANT ALL PRIVILEGES ON my_newdb.* TO 'iobba'@'%';  
 FLUSH PRIVILEGES;
 
-ALTER USER 'root'@'localhost' IDENTIFIED BY '1qaz2wsx';
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'iobba12345';

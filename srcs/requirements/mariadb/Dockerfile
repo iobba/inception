@@ -8,6 +8,4 @@ COPY ./conf/createdb.sql /
 
 RUN service mysql start && mysql < createdb.sql && rm -f createdb.sql
 
-EXPOSE 3306
-
 CMD /usr/bin/mysqld_safe
