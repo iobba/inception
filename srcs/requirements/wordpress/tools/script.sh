@@ -11,8 +11,10 @@ cd /var/www/html
 
 echo "Wordpress: setting uuuuuuuuup..."
 # install the WP-CLI tool
-curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar 
-chmod +x wp-cli.phar    
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar .
+
+chmod +x wp-cli.phar
+
 mv wp-cli.phar /usr/local/bin/wp
 
 # downloading wordpress
@@ -21,6 +23,12 @@ wp core download --allow-root
 mv /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
 
 mv /wp-config.php /var/www/html/wp-config.php
+
+chown -R www-data:www-data /var/www/html
+
+find /var/www/html -type d -exec chmod 755 {} \
+
+find /var/www/html -type f -exec chmod 644 {} \
 
 # connect with the database
 sed -i -r "s/database_name_here/$db_name/1"   wp-config.php
