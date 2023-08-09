@@ -1,6 +1,6 @@
-CREATE DATABASE $mariadb_name;
-CREATE USER '$mariadb_user'@'%' IDENTIFIED BY '$mariadb_pwd';
-GRANT ALL PRIVILEGES ON $mariadb_name.* TO '$mariadb_user'@'%';  
+CREATE DATABASE db2;
+CREATE USER 'db222'@'%' IDENTIFIED BY 'db12345';
+GRANT ALL PRIVILEGES ON db2.* TO 'db222'@'%';  
 FLUSH PRIVILEGES;
 
-ALTER USER 'root'@'localhost' IDENTIFIED BY '$new_root_pwd';
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'iobba12345';
