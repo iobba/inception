@@ -5,14 +5,14 @@ volumes:
                 name: wordpress
                 driver: local
                 driver_opts:
-                        device: /Users/user/Desktop/inception/srcs/wordpress
+                        device: /Users/iobba/Desktop/inception/srcs/wordpress
                         o: bind
                         type: none
         mariadb:
                 name: mariadb
                 driver: local
                 driver_opts:
-                        device: /Users/user/Desktop/inception/srcs/mariadb
+                        device: /Users/iobba/Desktop/inception/srcs/mariadb
                         o: bind
                         type: none
 
@@ -30,7 +30,7 @@ services:
     depends_on:
       - wordpress
     volumes:
-     - wordpress:/var/www/html
+     - /Users/iobba/Desktop/inception/srcs/wordpress:/var/www/html
     networks:
       - inception
     env_file:
@@ -43,7 +43,7 @@ services:
     depends_on:
       - mariadb
     volumes:
-      - wordpress:/var/www/html
+      - /Users/iobba/Desktop/inception/srcs/wordpress:/var/www/html
     env_file:
       - .env
     networks:
@@ -56,7 +56,7 @@ services:
     build: ./requirements/mariadb/
     image: mariadb:42
     volumes:
-      - mariadb:/var/lib/mysql
+      - /Users/iobba/Desktop/inception/srcs/mariadb:/var/lib/mysql
     env_file:
       - .env
     networks:
