@@ -1,10 +1,12 @@
 all : up
 
-up : 
+up :  
 	@docker-compose -f ./srcs/docker-compose.yml up -d
 
 down : 
 	@docker-compose -f ./srcs/docker-compose.yml down
+	@rm -rf ./srcs/mariadb
+	@rm -rf ./srcs/wordpress
 
 stop : 
 	@docker-compose -f ./srcs/docker-compose.yml stop
