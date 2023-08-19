@@ -5,8 +5,8 @@ up :
 
 down : 
 	@docker-compose -f ./srcs/docker-compose.yml down
-	@rm -rf ./srcs/mariadb
-	@rm -rf ./srcs/wordpress
+	@rm -rf /home/iobba/data/mariadb/*
+	@rm -rf /home/iobba/data/wordpress/*
 
 stop : 
 	@docker-compose -f ./srcs/docker-compose.yml stop

@@ -34,7 +34,7 @@ chmod +x wp-config.php
 
 echo "Wordpress: start creating the admin..."
 #the wordpress site
-wp core install --url=localhost --title=creative_ai --admin_user=ai_obba --admin_password=123456789 --admin_email=ismail.obba@gmail.com --skip-email --allow-root
+wp core install --url=iobba.42.fr --title=creative_ai --admin_user=ai_obba --admin_password=123456789 --admin_email=ismail.obba@gmail.com --skip-email --allow-root
 
 # the user account
 echo "Wordpress: start creating the user..."

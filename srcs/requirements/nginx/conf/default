@@ -2,7 +2,7 @@
 server {
     listen 443 ssl;
 
-    #server_name iobba.42.fr;
+    server_name iobba.42.fr;
 
     root /var/www/html;
 
