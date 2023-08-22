@@ -25,20 +25,20 @@ mv /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
 mv /wp-config.php /var/www/html/wp-config.php
 
 # connect with the database
-sed -i -r "s/database_name_here/db2/1"   wp-config.php
-sed -i -r "s/username_here/db222/1"  wp-config.php
-sed -i -r "s/password_here/db12345/1"    wp-config.php
+sed -i -r "s/database_name_here/$DB_NAME/1"   wp-config.php
+sed -i -r "s/username_here/$DB_USER/1"  wp-config.php
+sed -i -r "s/password_here/$DB_PASSWORD/1"    wp-config.php
 sed -i -r "s/localhost/mariadb/1"    wp-config.php
 
 chmod +x wp-config.php
 
 echo "Wordpress: start creating the admin..."
 #the wordpress site
-wp core install --url=iobba.42.fr --title=creative_ai --admin_user=ai_obba --admin_password=123456789 --admin_email=ismail.obba@gmail.com --skip-email --allow-root
+wp core install --url=$DOMAIN_NAME --title=$WP_TITLE --admin_user=$WP_ADMIN_USER --admin_password=$WP_ADMIN_PWD --admin_email=$WP_ADMIN_EMAIL --skip-email --allow-root
 
 # the user account
 echo "Wordpress: start creating the user..."
-wp user create ioooobba iobba@1337.com --role=author --user_pass=19_75 --allow-root
+wp user create $WP_USER $WP_EMAIL --role=author --user_pass=$DB_PWD --allow-root
 
 echo "Wordpress has been set up! Successfuly!"
  

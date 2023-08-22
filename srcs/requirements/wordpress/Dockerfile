@@ -12,7 +12,7 @@ RUN apt install php -y
 
 COPY ./tools/script.sh /
 RUN chmod +x /script.sh
-COPY ./tools/wp-config.php /
+COPY ./conf/wp-config.php /
 
 
 CMD [ "/script.sh" ]
