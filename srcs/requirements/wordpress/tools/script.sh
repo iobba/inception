@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 10
+sleep 15
 
 # create directory to use in nginx container later and also to setup the wordpress conf
 cd /var/www/html
