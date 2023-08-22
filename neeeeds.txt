@@ -1,6 +1,0 @@
-###### TO DO  #######
-
-### you still need to do the envirenment variables and make sure every value has an enviroment varible
-### make sure to create a (tools and config) directories for each service
-### get agnowleged .....
-### that's all i know until now!!!!

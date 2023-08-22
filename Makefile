@@ -7,6 +7,7 @@ down :
 	@docker-compose -f ./srcs/docker-compose.yml down
 	@rm -rf /home/iobba/data/mariadb/*
 	@rm -rf /home/iobba/data/wordpress/*
+	@rm -f ./srcs/db.sql
 
 stop : 
 	@docker-compose -f ./srcs/docker-compose.yml stop
