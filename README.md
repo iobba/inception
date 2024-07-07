@@ -1,5 +1,7 @@
 # Inception: Docker Infrastructure Setup Project
 
+![Image Description](https://github.com/iobba/inception/blob/master/dockere.png)
+
 ## Introduction
 
 This project involves setting up a small infrastructure using Docker, focusing on containerizing and orchestrating several services using docker-compose.
